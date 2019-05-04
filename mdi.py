@@ -8,9 +8,9 @@ class MdiArea(QMdiArea):
 	def __init__(self):
 		QMdiArea.__init__(self)
 		
-	def createNewSubHex(self):
+	def createNewSubHex(self,path=None):
 		newHex = QMdiSubWindow();
-		newHex.setWidget(HexEdit());
+		newHex.setWidget(HexEdit(path));
 		newHex.setAttribute(Qt.WA_DeleteOnClose);
 		self.addSubWindow(newHex);
 		newHex.show()

@@ -13,8 +13,6 @@ class MainWindow(QMainWindow):
 		self.changeViewMode=None
 		self.createMenuBar()
 
-		
-		
 		self.show()
 		
 		

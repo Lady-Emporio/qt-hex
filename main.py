@@ -4,5 +4,4 @@ from PyQt5.QtWidgets import QApplication
 from mainWindows import MainWindow
 app = QApplication([])
 livePleaseDontDelete=MainWindow()
-livePleaseDontDelete.action_hexOpen()
 app.exec_()
